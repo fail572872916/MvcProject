@@ -1,21 +1,13 @@
 package com.test.oschina.mvcproject.fragment;
 
-import android.animation.Animator;
-import android.animation.ObjectAnimator;
-import android.animation.PropertyValuesHolder;
-import android.graphics.Bitmap;
-import android.graphics.PointF;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
-import android.widget.SimpleAdapter;
 
 import com.test.oschina.mvcproject.R;
 import com.test.oschina.mvcproject.adapter.ShopAdapter;
@@ -24,8 +16,6 @@ import com.test.oschina.mvcproject.entity.Info;
 import com.test.oschina.mvcproject.model.InfoDao;
 import com.test.oschina.mvcproject.model.InfoImpl;
 import com.test.oschina.mvcproject.view.AnimaoUtils;
-import com.test.oschina.mvcproject.view.MoveImageView;
-
 import java.util.ArrayList;
 
 import java.util.List;
