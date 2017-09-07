@@ -28,14 +28,12 @@ public class ShopAdapter extends BaseAdapter {
     private Context mConText;
     private ClothAddCallback callback;
     private ListView listView;
-
     public ShopAdapter(List<Info> list, Context mConText, ClothAddCallback callback, ListView listView) {
         this.list = list;
         this.mConText = mConText;
         this.callback = callback;
         this.listView = listView;
     }
-
     @Override
     public int getCount() {
         return list == null ? 0 : list.size();
