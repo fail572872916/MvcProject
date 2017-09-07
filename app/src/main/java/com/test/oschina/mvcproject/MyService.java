@@ -13,7 +13,7 @@ public class MyService extends Service {
     private boolean serverRunning = false;
     MyThread my ;    Thread thread;
     public MyService() {
-        
+
     }
 
     @Override
