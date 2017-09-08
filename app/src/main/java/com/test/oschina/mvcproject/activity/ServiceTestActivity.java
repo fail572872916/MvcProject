@@ -84,9 +84,7 @@ public class ServiceTestActivity extends Activity  implements View.OnClickListen
                 }else {
                     Intent i= new Intent(ServiceTestActivity.this,TestThreadActivity.class);
                     startActivity(i);
-
                 }
-
                 break;
 
             default:

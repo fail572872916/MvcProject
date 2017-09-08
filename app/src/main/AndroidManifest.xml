@@ -10,11 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.MainActivity" />
-        <activity android:name=".activity.ServiceTestActivity">
-
-        </activity>
+        <activity android:name=".activity.ServiceTestActivity" />
         <activity android:name=".activity.TestActivity" />
-        <activity android:name=".activity.TestThreadActivity"></activity>
+        <activity android:name=".activity.TestThreadActivity" />
 
         <service
             android:name=".MyService"
@@ -27,8 +25,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+        <activity
+            android:name=".activity.MainActivity2"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.Main3Activity"></activity>
     </application>
 
 </manifest>
