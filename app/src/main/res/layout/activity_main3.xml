@@ -6,4 +6,10 @@
     android:layout_height="match_parent"
     tools:context="com.test.oschina.mvcproject.activity.Main3Activity">
 
+    <ListView
+
+        android:id="@+id/lv_testList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+
 </android.support.constraint.ConstraintLayout>
