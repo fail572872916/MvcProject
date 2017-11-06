@@ -8,7 +8,7 @@ import android.os.Bundle;
 import com.test.oschina.mvcproject.NetWorkStateReceiver;
 import com.test.oschina.mvcproject.R;
 
-public class Main5Activity extends AppCompatActivity {
+public class CheckNetActivity extends AppCompatActivity {
     NetWorkStateReceiver netWorkStateReceiver;
 
     @Override

@@ -40,7 +40,7 @@
             android:name=".activity.Main4Activity"
             android:label="@string/title_activity_main4"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity.Main5Activity"></activity>
+        <activity android:name=".activity.CheckNetActivity"></activity>
 
         <!--<receiver android:name=".NetWorkStateReceiver">-->
         <!--<intent-filter>-->
