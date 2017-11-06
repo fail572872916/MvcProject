@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_socket_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接" />
+
+        <Button
+            android:id="@+id/bt_socket_break"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="断开" />
+
+        <EditText
+            android:id="@+id/ed_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="192.168.0.108"/>
+
+        <Button
+            android:id="@+id/bt_socket_change_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="换ip连接" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

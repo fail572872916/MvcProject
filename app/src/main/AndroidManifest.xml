@@ -11,29 +11,34 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.ServiceTestActivity" />
-
         <activity android:name=".activity.TestThreadActivity" />
+        <activity android:name=".base.SocketBaseActivity" />
 
         <service
             android:name=".MyService"
             android:enabled="true"
             android:exported="true" />
+        <service
+            android:name=".SocketService"
+            android:enabled="true"
+            android:exported="true" />
 
-        <activity android:name=".activity.PrintActivity">
-
-        </activity>
+        <activity android:name=".activity.PrintActivity"></activity>
         <activity
             android:name=".activity.MainActivity2"
             android:label="@string/title_activity_main2"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activity.Main3Activity">
-
+        <activity android:name=".activity.SocketTestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity.Main4Activity"
+            android:label="@string/title_activity_main4"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

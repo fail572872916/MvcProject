@@ -76,7 +76,6 @@ public class ServiceTestActivity extends Activity  implements View.OnClickListen
                 }
                 break;
             case R.id.bt_intent:
-
                 if(ed_edit.getText().toString().equals("end")){
                     Intent i= new Intent(ServiceTestActivity.this,TestThreadActivity.class);
                     startActivity(i);
@@ -86,7 +85,6 @@ public class ServiceTestActivity extends Activity  implements View.OnClickListen
                     startActivity(i);
                 }
                 break;
-
             default:
                 break;
 
@@ -109,7 +107,6 @@ public class ServiceTestActivity extends Activity  implements View.OnClickListen
                 handler.sendMessage(message);
             }
         });
-
     }
 
     @Override
