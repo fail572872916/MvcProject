@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="tcpserver_theme">#35B87F</color>
+    <color name="trans">#00000000</color>
+    <color name="red">#E60012</color>
+    <color name="txtcolor_black">#474140</color>
+    <color name="txtcolor_gray">#DFE0E0</color>
+    <color name="gray">#BFBFBF</color>
 </resources>

@@ -22,9 +22,10 @@ import java.net.UnknownHostException;
 import java.util.Arrays;
 
 /**
- * Created by WeLi on 2016/10/7 0007.
+ *  @author Weli
+ *  @Time 2018-01-10  14:48
+ *  @describe 
  */
-
 public class SocketService extends Service {
     private static final String TAG = "SocketService";
     public MyCountDownTimer mc;
@@ -353,4 +354,5 @@ public class SocketService extends Service {
             }
         }
     }
+
 }

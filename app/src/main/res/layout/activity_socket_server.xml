@@ -1,9 +1,29 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.test.oschina.mvcproject.activity.SocketServer">
+    android:orientation="vertical" >
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/start_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Service" />
+
+    <Button
+        android:id="@+id/stop_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Service" />
+    <ListView
+        android:id="@+id/activity_tcpserver_lv_connection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#35B87F"
+        android:dividerHeight="0.1dp"
+        android:listSelector="#00000000"
+        android:overScrollMode="never"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@drawable/rect_scrollbar_tcpserver"
+        android:scrollbarTrackVertical="@color/trans" />
+</LinearLayout>
