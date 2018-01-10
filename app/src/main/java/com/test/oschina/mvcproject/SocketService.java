@@ -203,7 +203,6 @@ public class SocketService extends Service {
             Log.d(TAG, "initTask.getStatus():" + initTask.getStatus());
         }
         Log.e("Service", "执行了");
-        mLocalBroadcastManager.unregisterReceiver();
         super.onDestroy();
     }
     private class InitTask extends AsyncTask<String, Void, Void> {

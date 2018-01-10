@@ -12,4 +12,5 @@
     <string name="server_off">没有连接，可能是服务器已断开</string>
     <string name="link_fail">连接失败</string>
     <string name="title_activity_main4">Main4Activity</string>
+    <string name="title_activity_copy_photo">CopyPhotoActivity</string>
 </resources>
