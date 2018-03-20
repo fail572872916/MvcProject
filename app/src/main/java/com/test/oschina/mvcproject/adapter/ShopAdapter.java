@@ -24,6 +24,7 @@ import java.util.List;
  */
 
 public class ShopAdapter extends BaseAdapter {
+
     List<Info> list;
     private Context mConText;
     private ClothAddCallback callback;
