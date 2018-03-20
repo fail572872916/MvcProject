@@ -37,15 +37,16 @@ public class SocketServer extends SocketServerBaseActivity implements View.OnCli
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_socket_server);
+        setContentView(R.layout.activity_socket_server) ;
         mReciver= new BaseMessageBackReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
                 String action = intent.getAction();
-                if (action.equals(SocketService.MESSAGE_ACTION)) {
+                if (action.equals("myaction")) {
                     int messageWhat = intent.getIntExtra("messageWhat",0);
                     String a=intent.getStringExtra("address");
-                    Log.d("SocketServer", messageWhat+"ssssss"+a);
+                    Log.d("ServerService", messageWhat+"ssssss"+a);
+                    Log.d("ServerService", messageWhat+"ssssss"+a);
                 }
             }
         };

@@ -18,7 +18,7 @@ public class HomeActivity extends AppCompatActivity {
     ListView lv_testList;
 
     String[] content = new String[]{"贝尔塞购物车", "线程测试", "服务测试", "打印机测试", "网络检测","二维码生成","键盘","复制图片到SD卡","socket服务端" +
-            ""};
+            "","直连MySql"};
 
     List list = new ArrayList();
 
@@ -50,5 +50,6 @@ public class HomeActivity extends AppCompatActivity {
         list.add(PopBoradKeyActivity.class);
         list.add(CopyPhotoActivity.class);
         list.add(SocketServer.class);
+        list.add(MySqlLinkActivity.class);
     }
 }

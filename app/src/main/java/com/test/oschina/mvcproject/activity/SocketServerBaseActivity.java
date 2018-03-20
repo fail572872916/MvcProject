@@ -10,6 +10,7 @@ import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.v4.content.LocalBroadcastManager;
+import android.util.Log;
 
 import com.test.oschina.mvcproject.ISocketServer;
 import com.test.oschina.mvcproject.SocketService;
@@ -49,7 +50,8 @@ public class SocketServerBaseActivity extends Activity{
     public  void  startRecive(){
         if (mReciver != null) {
             initSocket();
-            localBroadcastManager.registerReceiver(mReciver, mIntentFilter);
+            LocalBroadcastManager.getInstance(this).registerReceiver(
+                    mReciver, mIntentFilter);
             bindService(mServiceIntent, connection, BIND_ABOVE_CLIENT);
             startService(mServiceIntent);
         }
@@ -68,6 +70,11 @@ public class SocketServerBaseActivity extends Activity{
          */
         @Override
         public abstract void onReceive(Context context, Intent intent);
+
+
+
+
+
     }
 
     public void initSocket() {

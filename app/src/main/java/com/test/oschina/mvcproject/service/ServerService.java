@@ -39,7 +39,7 @@ public class ServerService extends Service {
     private ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
     private int runnableID = 1;
 
-    public static final String MESSAGE_ACTION = "com.test.oschina.mvcproject.service";
+    public static final String MESSAGE_ACTION ="myaction";
 //    /**    回调  */
 //    private ServerReceive serverReceive;
     /** socket服务端 */
@@ -147,6 +147,10 @@ public class ServerService extends Service {
                     Log.d("ServerService", "msg.obj1:" + msg.obj);
                     mLocalBroadcastManager.sendBroadcast(intent);
 
+
+                    intent.putExtra( "data" , "子线程发过来的消息" ) ;
+                    mLocalBroadcastManager.sendBroadcast( intent ) ;
+
                 } else if (msg.obj instanceof byte[]) {
                     String address = null;
                     if (msg.arg1 > 0) {
@@ -160,6 +164,8 @@ public class ServerService extends Service {
                     intent.putExtra("address", address);
                     intent.putExtra("msgByte", (byte[]) msg.obj);
                     mLocalBroadcastManager.sendBroadcast(intent);
+
+
                 } else if (msg.obj instanceof String) {
                     Log.d("ServerService", "msg.obj3:" + msg.obj+"___"+msg.what+"____"+mapAddress);
 
