@@ -1,18 +1,13 @@
 package com.test.oschina.mvcproject.checkerboard;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
-
 public class lattice extends View {
-
     //棋盘的宽度和高度，为了正方形
     private int mPanelWidth;
     //每一行的高度
