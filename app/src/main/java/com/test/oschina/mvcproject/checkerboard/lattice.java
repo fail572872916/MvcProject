@@ -41,6 +41,8 @@ public class lattice extends View {
         int width = Math.min(widthSize, heightSize);
         //heightMode
         if (widthMode == MeasureSpec.UNSPECIFIED) {
+
+
             width = heightSize;
             Log.d("lattice", "width:" + width);
         } else if (heightMode == MeasureSpec.UNSPECIFIED) {
