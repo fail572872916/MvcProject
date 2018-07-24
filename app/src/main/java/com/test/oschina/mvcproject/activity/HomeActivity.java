@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.test.oschina.mvcproject.R;
+import com.test.oschina.mvcproject.checkerboard.LatticeActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +19,7 @@ public class HomeActivity extends AppCompatActivity {
     ListView lv_testList;
 
     String[] content = new String[]{"贝尔塞购物车", "线程测试", "服务测试", "打印机测试", "网络检测","二维码生成","键盘","复制图片到SD卡","socket服务端" +
-            "","直连MySql"};
+            "","直连MySql","棋盘"};
 
     List list = new ArrayList();
 
@@ -51,5 +52,6 @@ public class HomeActivity extends AppCompatActivity {
         list.add(CopyPhotoActivity.class);
         list.add(SocketServer.class);
         list.add(MySqlLinkActivity.class);
+        list.add(LatticeActivity.class);
     }
 }

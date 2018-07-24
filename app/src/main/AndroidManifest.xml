@@ -59,7 +59,10 @@
 
         <service android:name=".service.ServerService" />
 
-        <activity android:name=".activity.MySqlLinkActivity"></activity>
+        <activity android:name=".activity.MySqlLinkActivity" />
+        <activity android:name=".checkerboard.LatticeActivity"
+            android:screenOrientation="landscape"
+            ></activity>
     </application>
 
 </manifest>
