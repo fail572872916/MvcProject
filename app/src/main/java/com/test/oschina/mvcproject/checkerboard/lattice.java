@@ -25,19 +25,24 @@ import java.util.TreeSet;
 
 public class lattice extends View {
 
-    //是否结束
-    private boolean mIsGameOver = false;
-    private ArrayList<Point> mWhiteArray = new ArrayList<>();    //棋子只占网格宽度的3/4
-    private float ratioPieceOfLineHeight = 3 * 1.0f / 4;
+    private OnViewClick mViewClick;
 
+    /**
+     * 点的集合
+     */
+    private ArrayList<Point> mWhiteArray = new ArrayList<>();
     List<Integer> linesPoint = new ArrayList<>();
 
     Set<Integer> lines = new TreeSet<Integer>(new MyComparator());
 //    Set<Integer> lines = new TreeSet<Integer>(new MyComparator());
 
-    //棋盘的宽度和高度，为了正方形
+    /**
+     * 棋盘的宽度和高度
+     */
     private int mPanelWidth;
-    //每一行的高度
+    /**
+     * 每一行的高度
+     */
     private float mLineHeight;
     //设置棋盘为10*10的网格
     private int MAX_LINE = 5;
@@ -56,6 +61,7 @@ public class lattice extends View {
         //初始化画笔，获取棋子的图片等
         init();
     }
+
 
     private void init() {
         mPaint.setColor(0x88000000);
@@ -126,9 +132,7 @@ public class lattice extends View {
                 canvas.drawLine(y, startX, y, endX, mPaint);
             }
             lines.add(y);
-
         }
-
         Log.d("lattice", "linesPoint:" + linesPoint);
         Log.d("lattice", "linesPoint:" + lines);
     }
@@ -190,17 +194,32 @@ public class lattice extends View {
      * @param maxX
      */
     private void getLinePoint(Point point, Integer integer, int minX, int maxX) {
+
         if (point.x < minX) {
 //            if (isAdd(new Point(minX, integer))) {
-            mWhiteArray.add(new Point(minX, integer));
+
+            Point point1 = new Point(minX, integer);
+            mWhiteArray.add(point);
+            if (mViewClick != null) {
+                mViewClick.onClick(point1);
+            }
 //            }
         } else if (point.x > maxX) {
 //            if (isAdd(new Point(maxX, integer))) {
-            mWhiteArray.add(new Point(maxX, integer));
+
+            Point point1 = new Point(maxX, integer);
+            mWhiteArray.add(point1);
+            if (mViewClick != null) {
+                mViewClick.onClick(point1);
+            }
 //            }
         } else {
 //            if (isAdd(new Point(point.x, integer))) {
-            mWhiteArray.add(new Point(point.x, integer));
+            Point point1 = new Point(point.x, integer);
+            mWhiteArray.add(point1);
+            if (mViewClick != null) {
+                mViewClick.onClick(point1);
+            }
 //            }
         }
     }
@@ -230,7 +249,11 @@ public class lattice extends View {
         return isAdd;
     }
 
-
+    /**
+     * 画出的圆与桌台号
+     *
+     * @param canvas
+     */
     private void drawPieces(Canvas canvas) {
         for (int i = 0, n = mWhiteArray.size(); i < n; i++) {
             Point whitePoint = mWhiteArray.get(i);
@@ -240,11 +263,27 @@ public class lattice extends View {
 
             mPaint1.setColor(Color.RED);
             mPaint1.setTextSize(24);
-            canvas.drawText("1号桌", whitePoint.x-20, whitePoint.y + 40, mPaint1);
+            canvas.drawText("1号桌", whitePoint.x - 20, whitePoint.y + 40, mPaint1);
 
 
 //            canvas.drawPoint(whitePoint.x, whitePoint.y, mPaint);//画一个点
 
         }
     }
+
+
+    public void setOnViewClick(OnViewClick click) {
+        this.mViewClick = click;
+    }
+
+
+    public interface OnViewClick {
+        /**
+         * 传入的点
+         *
+         * @param point
+         */
+        void onClick(Point point);
+    }
+
 }
