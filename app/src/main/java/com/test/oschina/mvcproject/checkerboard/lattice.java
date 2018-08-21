@@ -125,8 +125,7 @@ public class lattice extends View {
             int endX = (int) (w - lineHeight / 2);
             int y = (int) ((0.5 + i) * lineHeight);
             Log.d("lattice", "y:" + y);
-            Log.d("lattice", "startX:" + startX);
-            Log.d("lattice", "endX:" + endX);
+
             canvas.drawLine(startX, y, endX, y, mPaint);
             if (i == 0 || i == MAX_LINE - 1) {
                 canvas.drawLine(y, startX, y, endX, mPaint);
@@ -194,10 +193,8 @@ public class lattice extends View {
      * @param maxX
      */
     private void getLinePoint(Point point, Integer integer, int minX, int maxX) {
-
         if (point.x < minX) {
 //            if (isAdd(new Point(minX, integer))) {
-
             Point point1 = new Point(minX, integer);
             mWhiteArray.add(point);
             if (mViewClick != null) {

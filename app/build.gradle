@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 
+apply plugin: 'org.greenrobot.greendao'
 android {
     compileSdkVersion 25
     buildToolsVersion '25.0.3'
@@ -20,6 +21,12 @@ android {
     }
 }
 
+
+greendao {
+    schemaVersion 1
+    daoPackage 'com.test.oschina.mvcproject.checkerboard'
+    targetGenDir 'src/main/java'
+}
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -35,4 +42,5 @@ dependencies {
     compile files('libs/mysql-connector-java-5.0.8-bin.jar')
     compile 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'org.greenrobot:greendao:3.2.2'
 }
