@@ -14,7 +14,6 @@ public class DeskPoint {
     @Id(autoincrement = true) // id自增长
     private Long  deskId;
     private  int col;
-
     @ToOne(joinProperty = "deskId")
     private  DetailPoint point;
     /** Used to resolve relations */

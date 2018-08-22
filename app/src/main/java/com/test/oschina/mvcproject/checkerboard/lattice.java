@@ -12,7 +12,9 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
+import com.test.oschina.mvcproject.MyApplication;
 import com.test.oschina.mvcproject.R;
 import com.test.oschina.mvcproject.utils.MyComparator;
 
@@ -31,7 +33,7 @@ public class lattice extends View {
      * 点的集合
      */
     private ArrayList<Point> mWhiteArray = new ArrayList<>();
-    List<Integer> linesPoint = new ArrayList<>();
+    List<Point> linesPoint = new ArrayList<>();
 
     Set<Integer> lines = new TreeSet<Integer>(new MyComparator());
     /**
@@ -159,7 +161,6 @@ public class lattice extends View {
         return true;
     }
 
-
     /**
      * 纠正点
      *
@@ -175,7 +176,7 @@ public class lattice extends View {
                     int minX = Collections.min(lines);
                     int maxX = Collections.max(lines);
                     Log.d("lattice3", "point.y - integer:" + (point.y - integer));
-                    if (point.y - integer <= 50 && point.y - integer >= -50) {
+                    if (point.y - integer <= 80 && point.y - integer >= -80) {
                         getLinePoint(point, integer, minX, maxX);
                         return;
                     }
@@ -215,10 +216,58 @@ public class lattice extends View {
         } else {
             point1 = new Point(point.x, integer);
         }
-        mWhiteArray.add(point1);
-//        if (mViewClick != null) {
-//            mViewClick.onClick(point1);
-//        }
+
+        if (mWhiteArray.size() > 0) {
+            linesPoint.clear();
+            for (Point point2 : mWhiteArray) {
+                if (point2.y == point1.y) {
+                    linesPoint.add(point2);
+                }
+            }
+            if (linesPoint.size() > 0) {
+                for (Point point2 : linesPoint) {
+                    if (point1.x < point2.x) {
+                        Log.d("lattice7", "不能添加");
+                        break;
+                    } else {
+                        mWhiteArray.add(point1);
+                        if (mViewClick != null) {
+                            mViewClick.onClick(point1, getTheNumberOfRows(point));
+                        }
+                    }
+                }
+            }
+        } else {
+            mWhiteArray.add(point1);
+            if (mViewClick != null) {
+                mViewClick.onClick(point1, getTheNumberOfRows(point));
+            }
+        }
+//            mWhiteArray.add(point1);
+//            if (mViewClick != null) {
+//                mViewClick.onClick(point1, getTheNumberOfRows(point));
+//            }
+
+    }
+
+
+    /**
+     * 得到第几行
+     *
+     * @param point
+     * @return
+     */
+    public int getTheNumberOfRows(Point point) {
+        int i = 0;
+        if (lines.size() > 0) {
+            for (Integer line : lines) {
+                if (line == point.y) {
+                    i++;
+                    break;
+                }
+            }
+        }
+        return i;
     }
 
     /**
@@ -240,7 +289,6 @@ public class lattice extends View {
                         isAdd = true;
                     }
                 }
-
             }
         }
         return isAdd;
@@ -273,8 +321,9 @@ public class lattice extends View {
          * 传入的点
          *
          * @param point
+         * @param row   第几行
          */
-        void onClick(Point point);
+        void onClick(Point point, int row);
     }
 
 }

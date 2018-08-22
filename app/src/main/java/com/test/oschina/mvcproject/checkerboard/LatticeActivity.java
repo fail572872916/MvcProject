@@ -26,7 +26,7 @@ public class LatticeActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         latticeView.setOnViewClick(new lattice.OnViewClick() {
             @Override
-            public void onClick(Point point) {
+            public void onClick(Point point, int row) {
                 Log.d("LatticeActivity", "point:" + point);
 
                 DetailPoint detailPoint = new DetailPoint();
@@ -44,6 +44,8 @@ public class LatticeActivity extends AppCompatActivity {
 
                 Toast.makeText(LatticeActivity.this, msg, Toast.LENGTH_SHORT).show();
             }
+
+
 
         });
     }
