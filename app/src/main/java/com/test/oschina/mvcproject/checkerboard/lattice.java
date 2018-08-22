@@ -62,7 +62,6 @@ public class lattice extends View {
         init();
     }
 
-
     private void init() {
         mPaint.setColor(0x88000000);
         mPaint.setAntiAlias(true);
@@ -245,7 +244,6 @@ public class lattice extends View {
         }
         return isAdd;
     }
-
     /**
      * 画出的圆与桌台号
      *
@@ -257,23 +255,15 @@ public class lattice extends View {
             mPaint1.setColor(Color.BLUE);
             // 小圆
             canvas.drawCircle(whitePoint.x, whitePoint.y, 10, mPaint1);
-
             mPaint1.setColor(Color.RED);
             mPaint1.setTextSize(24);
             canvas.drawText("1号桌", whitePoint.x - 20, whitePoint.y + 40, mPaint1);
-
-
 //            canvas.drawPoint(whitePoint.x, whitePoint.y, mPaint);//画一个点
-
         }
     }
-
-
     public void setOnViewClick(OnViewClick click) {
         this.mViewClick = click;
     }
-
-
     public interface OnViewClick {
         /**
          * 传入的点
