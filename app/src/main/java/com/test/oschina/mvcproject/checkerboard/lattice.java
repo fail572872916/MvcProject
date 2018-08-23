@@ -161,6 +161,7 @@ public class lattice extends View {
         return true;
     }
 
+
     /**
      * 纠正点
      *
