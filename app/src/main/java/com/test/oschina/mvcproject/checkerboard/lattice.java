@@ -186,6 +186,23 @@ public class lattice extends View {
         }
     }
 
+
+    /**
+     * 取消添加点
+     * @param point
+     */
+    public void removePoint(Point point) {
+        if (mWhiteArray.size() > 0) {
+            for (Point point1 : mWhiteArray) {
+                if (point1.x == point.x && point.y == point1.y) {
+                    mWhiteArray.remove(point);
+                    invalidate();
+                    break;
+                }
+
+            }
+        }
+    }
     /**
      * 得到线上的点
      *
