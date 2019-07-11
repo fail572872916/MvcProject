@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">videoPlayer</string>
+    <string name="filename">视频文件名称</string>
+    <string name="filenoexsit">视频文件不存在</string>
+</resources>
