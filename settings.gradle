@@ -1,1 +1,1 @@
-include ':app', ':androrid4mysql', ':videoPlay', ':fileserach'
+include ':app', ':androrid4mysql', ':videoPlay', ':fileserach', ':WindowHeadToast'
