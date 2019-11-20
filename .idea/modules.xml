@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="MvcProject/app" />
       <module fileurl="file://$PROJECT_DIR$/fileserach/fileserach.iml" filepath="$PROJECT_DIR$/fileserach/fileserach.iml" group="MvcProject/fileserach" />
+      <module fileurl="file://$PROJECT_DIR$/jetpacktest/jetpacktest.iml" filepath="$PROJECT_DIR$/jetpacktest/jetpacktest.iml" />
       <module fileurl="file://$PROJECT_DIR$/videoPlay/videoPlay.iml" filepath="$PROJECT_DIR$/videoPlay/videoPlay.iml" group="MvcProject/videoPlay" />
     </modules>
   </component>
