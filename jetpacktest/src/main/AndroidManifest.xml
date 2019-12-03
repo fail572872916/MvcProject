@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".androidviewmodule.Main6Activity"></activity>
+
         <service
             android:name=".saveInstanceState.MyService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
 
         <activity android:name=".saveInstanceState.Main5Activity">
             <intent-filter>
@@ -21,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".testScore.Main4Activity"></activity>
+        <activity android:name=".testScore.Main4Activity" />
         <activity android:name=".databinding.Main3Activity" />
         <activity android:name=".livedata.Main2Activity" />
         <activity android:name=".viewmodel.MainActivity" />
