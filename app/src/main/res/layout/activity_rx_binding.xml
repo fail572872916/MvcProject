@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RxBindingActivity">
+    <LinearLayout
+        android:id="@+id/dragView"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+
+        android:background="#35ffffff"
+        android:clickable="true"
+        android:focusable="false"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_top_left"
+                    style="@style/buttonStyle"
+
+
+                    android:text="左上" />
+
+                <Button
+                    android:id="@+id/button_top"
+                    style="@style/buttonStyle"
+
+                    android:text="上" />
+
+                <Button
+                    android:id="@+id/button_top_right"
+                    style="@style/buttonStyle"
+
+
+                    android:text="右上" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_left"
+                    style="@style/buttonStyle"
+
+
+                    android:text="左" />
+
+                <Button
+
+                    style="@style/buttonStyle"
+
+                    android:background="@android:color/transparent"
+                    android:text="" />
+
+
+                <Button
+                    android:id="@+id/button_right"
+                    style="@style/buttonStyle"
+
+
+                    android:text="右" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_bottom_left"
+                    style="@style/buttonStyle"
+
+
+                    android:text="左上" />
+
+
+                <Button
+                    android:id="@+id/button_bottom"
+                    style="@style/buttonStyle"
+
+
+                    android:text="下" />
+
+                <Button
+                    android:id="@+id/button_bottom_right"
+                    style="@style/buttonStyle"
+
+
+                    android:text="右上" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button_left_trialTeaching"
+                    style="@style/buttonStyle"
+
+
+                    android:text="左转" />
+
+                <Button
+                    android:id="@+id/button_right_trialTeaching"
+                    style="@style/buttonStyle"
+                    android:text="右转" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button_left_90"
+                    style="@style/buttonStyle"
+                    android:text="左90" />
+
+                <Button
+                    android:id="@+id/button_right_90"
+                    style="@style/buttonStyle"
+                    android:text="右90" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

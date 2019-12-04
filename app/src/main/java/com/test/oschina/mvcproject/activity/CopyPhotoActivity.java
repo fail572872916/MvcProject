@@ -1,13 +1,13 @@
 package com.test.oschina.mvcproject.activity;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -26,7 +26,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CopyPhotoActivity extends AppCompatActivity {
+public class CopyPhotoActivity extends Activity {
 
     private ArrayAdapter<String> adapter;
     private ListView mShowPathLv;

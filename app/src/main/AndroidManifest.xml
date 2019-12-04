@@ -15,6 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.RxBindingActivity"></activity>
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.ServiceTestActivity" />
         <activity android:name=".activity.TestThreadActivity" />
@@ -42,15 +43,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- <receiver android:name=".NetWorkStateReceiver"> -->
+        </activity> <!-- <receiver android:name=".NetWorkStateReceiver"> -->
         <!-- <intent-filter> -->
         <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/> -->
         <!-- <category android:name="android.intent.category.DEFAULT" /> -->
         <!-- </intent-filter> -->
         <!-- </receiver> -->
-
         <activity
             android:name=".activity.CopyPhotoActivity"
             android:label="@string/title_activity_copy_photo"
@@ -61,9 +59,9 @@
         <service android:name=".service.ServerService" />
 
         <activity android:name=".activity.MySqlLinkActivity" />
-        <activity android:name=".checkerboard.LatticeActivity"
-            android:screenOrientation="landscape"
-            ></activity>
+        <activity
+            android:name=".checkerboard.LatticeActivity"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>
