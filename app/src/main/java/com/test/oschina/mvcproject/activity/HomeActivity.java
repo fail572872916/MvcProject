@@ -1,12 +1,13 @@
 package com.test.oschina.mvcproject.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.test.oschina.mvcproject.R;
 import com.test.oschina.mvcproject.checkerboard.LatticeActivity;
@@ -19,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
     ListView lv_testList;
 
     String[] content = new String[]{"贝尔塞购物车", "线程测试", "服务测试", "打印机测试", "网络检测","二维码生成","键盘","复制图片到SD卡","socket服务端" +
-            "","直连MySql","棋盘"};
+            "","直连MySql","棋盘","RxBinding"};
 
     List list = new ArrayList();
 
@@ -53,5 +54,6 @@ public class HomeActivity extends AppCompatActivity {
         list.add(SocketServer.class);
         list.add(MySqlLinkActivity.class);
         list.add(LatticeActivity.class);
+        list.add(RxBindingActivity.class);
     }
 }

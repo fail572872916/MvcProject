@@ -1,7 +1,16 @@
 package com.test.oschina.mvcproject.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.test.oschina.mvcproject.R;
+import com.test.oschina.mvcproject.utils.PrintLine;
+
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -9,17 +18,8 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import android.app.Activity;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 
-import com.test.oschina.mvcproject.R;
-import com.test.oschina.mvcproject.utils.PrintLine;
-
-public class PrintActivity extends AppCompatActivity   implements OnClickListener {
+public class PrintActivity extends AppCompatActivity implements OnClickListener {
 
 
         final String TAG = "xxl";

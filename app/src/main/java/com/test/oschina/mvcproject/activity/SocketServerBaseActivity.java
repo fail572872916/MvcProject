@@ -9,11 +9,10 @@ import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.support.v4.content.LocalBroadcastManager;
-import android.util.Log;
+
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.test.oschina.mvcproject.ISocketServer;
-import com.test.oschina.mvcproject.SocketService;
 import com.test.oschina.mvcproject.service.ServerService;
 
 /**

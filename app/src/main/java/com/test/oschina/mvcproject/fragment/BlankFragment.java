@@ -1,13 +1,14 @@
 package com.test.oschina.mvcproject.fragment;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
+
+import androidx.fragment.app.Fragment;
 
 import com.test.oschina.mvcproject.R;
 import com.test.oschina.mvcproject.adapter.ShopAdapter;

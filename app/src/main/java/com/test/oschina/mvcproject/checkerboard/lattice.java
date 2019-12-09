@@ -1,25 +1,20 @@
 package com.test.oschina.mvcproject.checkerboard;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Toast;
 
-import com.test.oschina.mvcproject.MyApplication;
-import com.test.oschina.mvcproject.R;
+import androidx.annotation.Nullable;
+
 import com.test.oschina.mvcproject.utils.MyComparator;
 
 import java.util.ArrayList;
-
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;

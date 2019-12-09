@@ -2,13 +2,13 @@ package com.test.oschina.mvcproject.checkerboard;
 
 import android.graphics.Point;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.test.oschina.mvcproject.R;
 import com.test.oschina.mvcproject.entity.DetailPoint;
-import com.test.oschina.mvcproject.entity.gen.DetailPointDao;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

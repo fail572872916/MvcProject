@@ -2,8 +2,9 @@ package com.test.oschina.mvcproject.activity;
 
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.test.oschina.mvcproject.NetWorkStateReceiver;
 import com.test.oschina.mvcproject.R;

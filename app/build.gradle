@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 apply plugin: 'org.greenrobot.greendao'
 android {
-    compileSdkVersion 25
+    compileSdkVersion 28
 
     defaultConfig {
         applicationId "com.test.oschina.mvcproject"
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdkVersion 22
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -45,17 +45,17 @@ dependencies {
     implementation 'com.android.support:design:25.3.1'
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:support-vector-drawable:25.3.1'
-    compile files('libs/core.jar')
-    compile files('libs/mysql-connector-java-5.0.8-bin.jar')
+    implementation files('libs/core.jar')
+    implementation files('libs/mysql-connector-java-5.0.8-bin.jar')
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     implementation 'org.greenrobot:greendao:3.2.2'
 //
 
     //最新版本
-    implementation 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
 
-    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
-    compile 'com.jakewharton.rxbinding:rxbinding-design:0.4.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    implementation 'com.jakewharton.rxbinding:rxbinding-design:0.4.0'
 }

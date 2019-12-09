@@ -4,19 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MvcProject.iml" filepath="$PROJECT_DIR$/MvcProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/MvcProject.iml" filepath="$PROJECT_DIR$/MvcProject.iml" group="MvcProject" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WindowHeadToast/MvcProject-WindowHeadToast.iml" filepath="$PROJECT_DIR$/.idea/modules/WindowHeadToast/MvcProject-WindowHeadToast.iml" group="MvcProject/WindowHeadToast" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androrid4mysql/MvcProject-androrid4mysql.iml" filepath="$PROJECT_DIR$/.idea/modules/androrid4mysql/MvcProject-androrid4mysql.iml" group="MvcProject/androrid4mysql" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MvcProject-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MvcProject-app.iml" group="MvcProject/app" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fileserach/MvcProject-fileserach.iml" filepath="$PROJECT_DIR$/.idea/modules/fileserach/MvcProject-fileserach.iml" group="MvcProject/fileserach" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/jetpacktest/MvcProject-jetpacktest.iml" filepath="$PROJECT_DIR$/.idea/modules/jetpacktest/MvcProject-jetpacktest.iml" group="MvcProject/jetpacktest" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/videoPlay/MvcProject-videoPlay.iml" filepath="$PROJECT_DIR$/.idea/modules/videoPlay/MvcProject-videoPlay.iml" group="MvcProject/videoPlay" />
       <module fileurl="file://$PROJECT_DIR$/WindowHeadToast/WindowHeadToast.iml" filepath="$PROJECT_DIR$/WindowHeadToast/WindowHeadToast.iml" />
       <module fileurl="file://$PROJECT_DIR$/androrid4mysql/androrid4mysql.iml" filepath="$PROJECT_DIR$/androrid4mysql/androrid4mysql.iml" group="MvcProject/androrid4mysql" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="MvcProject/app" />
       <module fileurl="file://$PROJECT_DIR$/fileserach/fileserach.iml" filepath="$PROJECT_DIR$/fileserach/fileserach.iml" group="MvcProject/fileserach" />
       <module fileurl="file://$PROJECT_DIR$/jetpacktest/jetpacktest.iml" filepath="$PROJECT_DIR$/jetpacktest/jetpacktest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/test-MvcProject.iml" filepath="$PROJECT_DIR$/.idea/modules/test-MvcProject.iml" group="MvcProject" />
       <module fileurl="file://$PROJECT_DIR$/videoPlay/videoPlay.iml" filepath="$PROJECT_DIR$/videoPlay/videoPlay.iml" group="MvcProject/videoPlay" />
     </modules>
   </component>
